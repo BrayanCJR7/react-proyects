@@ -1,9 +1,128 @@
-:root{
+:root {
     --first-color-bata-bit: #F7931A;
-    --background-color-bata-bit: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-second: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --white: #fff;
+    --background-color-bata-bit: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     --second-color-bata-bit: #201E1C;
     --three-color-bata-bit: #282623;
     --font-color-bata-bit: #fff;
     --font-weight-bata-bit: 700;
     --background-color-button-bata-bit: #FFE9D5;
+    --box-shadow-btn: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    --text-width: clamp(288px, 90%, 900px);
+}
+
+.main-bata {
+    text-align: center;
+}
+
+.home-bata {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--background-color-bata-bit);
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.batata-bit {
+    padding: 36px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.span-batata-bit {
+    color: var(--first-color-bata-bit);
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.home-title {
+    width: var(--text-width);
+    color: var(--white);
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.home-text {
+    color: var(--soft-orange);
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+
+.home-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    transform: translateY(50%);
+    width: 229px;
+    padding: .75rem;
+    border-radius: .25rem;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    box-shadow: var(--box-shadow-btn);
+    font-size: 14px;
+    font-weight: 700;
+}
+.home-link span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: .75rem;
+    background-image: url("./media/arrow_select.svg");
+}
+.BitCoin{
+    margin: 4rem 0;
+}
+.bgImgCoin{
+    width: 195px;
+    height: 195px;
+    margin: 0 auto 3rem;
+    background-image: url("media/bitCoin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.BitCoin-title{
+    font-size: 24px;
+    line-height: 24px;
+    width: var(--text-width);
+    margin: 0 auto 1.5rem;
+}
+
+.BitCoin-text{
+    font-size: 14px;
+    color: var(--grey);
+    width: var(--text-width);
+    margin: auto;
+}
+.btn{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--warm-black);
+    padding: .5rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.btnMonedas{
+    background-color: var(--soft-orange);
+}
+
+.btnComisiones{
+    background-color: var(--soft-blue);
 }

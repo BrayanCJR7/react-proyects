@@ -1,11 +1,20 @@
 import {useDocumentTitle} from '../useDocumentTitle'
-const BataBit = () => {
+import './bata-bit.css'
+import {HomeBata} from "./components/home-bata";
+import {MonedaBata} from "./components/moneda-bata";
+
+export const BataBit = () => {
     useDocumentTitle('Bata bit')
-    return(
+    return (
         <>
-            Bata bit
+            <main className="main-bata">
+                <HomeBata/>
+                <MonedaBata/>
+                <section>Descripcion del producto</section>
+                <section>Conocelo hoy</section>
+                <section>Escoje un plan</section>
+            </main>
+            <footer>Footer</footer>
         </>
     )
 }
-
-export {BataBit}

@@ -3,7 +3,7 @@ import React from "react";
 const SearchSection = () => {
     return (
         <>
-            <main>
+            <main className="main-google">
                 <section className="search-section">
                     <div className="container-logo">
                         <div id="logo"/>
