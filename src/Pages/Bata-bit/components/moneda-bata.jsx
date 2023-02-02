@@ -11,8 +11,8 @@ export const MonedaBata = () => {
                 <p className="BitCoin-text">
                     Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
                 </p>
-                <a href="" className="btn btnMonedas">Valores en <b>$ USD</b></a>
-                <a href="" className="btn btnComisiones">Valores en <b>$ USD</b></a>
+                <a href="Bata-bit/components" className="btn btnMonedas">Valores en <b>$ USD</b></a>
+                <a href="Bata-bit/components" className="btn btnComisiones">Valores en <b>$ USD</b></a>
             </section>
         </>
     )

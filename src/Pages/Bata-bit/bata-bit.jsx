@@ -1,4 +1,4 @@
-import {useDocumentTitle} from '../useDocumentTitle'
+import {useDocumentTitle} from '../../useDocumentTitle'
 import './bata-bit.css'
 import {HomeBata} from "./components/home-bata";
 import {MonedaBata} from "./components/moneda-bata";

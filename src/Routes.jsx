@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {GoogleClone} from "./Google-clone/googleClone";
-import {BataBit} from "./Bata-bit/bata-bit";
+import {GoogleClone} from "./Pages/Google-clone/googleClone";
+import {BataBit} from "./Pages/Bata-bit/bata-bit";
 import {Home} from "./home";
 
 export const Myroutes = () =>{

@@ -1,0 +1,35 @@
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-btn{
+    display: flex;
+    width: fit-content;
+    border: solid 1px #1A9AF7;
+    border-radius: .6rem;
+    margin: 0 auto;
+}
+
+.btn-tab {
+    background-color: white;
+    height: auto;
+    border: none;
+    border-radius: .5rem;
+    color: #1A9AF7;
+    padding: .5rem 1vw;
+    cursor: pointer;
+}
+
+.container-btn .activeBtnTab {
+    background-color: #1A9AF7;
+    color: white;
+}
+
+.containerTabs .tab-page {
+    display: none;
+}
+.containerTabs .activeTab {
+    display: block;
+}
