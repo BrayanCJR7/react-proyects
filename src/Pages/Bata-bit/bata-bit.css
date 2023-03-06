@@ -7,6 +7,8 @@
     --warm-black-second: #282623;
     --grey: #BABABA;
     --off-white: #FAF8F7;
+    --first-color-text: #FF9536;
+    --second-color-text: #757575;
     --white: #fff;
     --background-color-bata-bit: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     --second-color-bata-bit: #201E1C;
@@ -20,6 +22,7 @@
 
 .main-bata {
     text-align: center;
+    background-color: var(--off-white);
 }
 
 .home-bata {
@@ -76,17 +79,20 @@
     font-size: 14px;
     font-weight: 700;
 }
-.home-link span{
+
+.home-link span {
     display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: .75rem;
     background-image: url("media/arrow_select.svg");
 }
-.BitCoin{
+
+.BitCoin {
     margin: 4rem 0;
 }
-.bgImgCoin{
+
+.bgImgCoin {
     width: 195px;
     height: 195px;
     margin: 0 auto 3rem;
@@ -96,20 +102,35 @@
     background-repeat: no-repeat;
 }
 
-.BitCoin-title{
+.BitCoin-title {
     font-size: 24px;
     line-height: 24px;
     width: var(--text-width);
     margin: 0 auto 1.5rem;
 }
 
-.BitCoin-text{
+.BitCoin-text {
     font-size: 14px;
-    color: var(--grey);
+    color: var(--second-color-text);
     width: var(--text-width);
     margin: auto;
+    font-weight: 500;
 }
-.btn{
+.containerInfoTasas{
+    width: 60%;
+    background-color: red;
+    margin: 3rem auto 0;
+    height: 10rem;
+}
+.titleTasas{
+    text-align: left;
+    color: var(--first-color-text);
+    font-weight: 700;
+    margin: .75rem;
+    font-size: 18px;
+}
+
+.btn {
     font-size: 12px;
     font-weight: 400;
     color: var(--warm-black);
@@ -119,10 +140,10 @@
     margin: 1rem 0;
 }
 
-.btnMonedas{
+.btnMonedas {
     background-color: var(--soft-orange);
 }
 
-.btnComisiones{
+.btnComisiones {
     background-color: var(--soft-blue);
 }
