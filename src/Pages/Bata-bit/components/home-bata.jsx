@@ -1,12 +1,12 @@
 import '../bata-bit.css'
-import Batatata from '../media/patata1.svg'
+import {PatataIcon} from "../media/patataIcon";
 
 export const HomeBata = () => {
     return (
         <>
             <section className="home-bata">
                 <div className="batata-bit">
-                    <img src={Batatata} alt=""/>
+                    <PatataIcon/>
                     <span className="span-batata-bit">Batatabit</span>
                 </div>
                 <h1 className="home-title">La próxima revolución en el intercambio de criptomonedas.</h1>

@@ -3,6 +3,9 @@ import './bata-bit.css'
 import {HomeBata} from "./components/home-bata";
 import {MonedaBata} from "./components/moneda-bata";
 import {DescriptionBata} from "./components/description-bata";
+import {Conocelo} from "./components/conocelo";
+import {Footer} from "./components/footer";
+import {Planes} from "./components/planes";
 
 export const BataBit = () => {
     useDocumentTitle('Bata bit')
@@ -12,10 +15,10 @@ export const BataBit = () => {
                 <HomeBata/>
                 <MonedaBata/>
                 <DescriptionBata/>
-                <section>Conocelo hoy</section>
-                <section>Escoje un plan</section>
+                <Conocelo/>
+                <Planes/>
             </main>
-            <footer>Footer</footer>
+            <Footer/>
         </>
     )
 }

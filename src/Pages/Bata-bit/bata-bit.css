@@ -22,6 +22,7 @@
     text-align: center;
     background-color: var(--off-white);
 }
+
 /*------------- Home -------------*/
 
 .home-bata {
@@ -85,6 +86,7 @@
     margin-left: .75rem;
     background-image: url("media/arrow_select.svg");
 }
+
 /*-------------Fin Home-------------*/
 /*------------- Bitcoin -------------*/
 .BitCoin {
@@ -117,13 +119,22 @@
 }
 
 .containerInfoTasas {
-    width: 60%;
-    margin: 3rem auto 0;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
 }
 
 .titleTasaMoneda {
     text-align: left;
     color: var(--first-color-text);
+    font-weight: 700;
+    margin: .75rem;
+    font-size: 18px;
+}
+
+.titleTasaComisiones {
+    text-align: left;
+    color: var(--secondary-blue);
     font-weight: 700;
     margin: .75rem;
     font-size: 18px;
@@ -153,33 +164,36 @@
     grid-gap: 1px;
     width: 13rem;
     margin: 0 auto;
-    background-color: var(--white);
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .item {
-    border: solid 1px;
+    /*border: solid 1px;*/
     padding: 10px;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     color: #B5B0AC;
+    background-color: var(--white);
 }
 
-.grid-tasas .mValue{
+.grid-tasas .mValue {
     display: flex;
     align-items: center;
     column-gap: .5rem;
     justify-content: center;
 }
+
 /*-------------Fin Bitcoin-------------*/
 /*------------- Despription -------------*/
-.mainDescription{
+.mainDescription {
     background: var(--warm-black);
     padding: 4rem 1rem 2rem;
     position: relative;
 }
 
-.patataIcon{
+.patataIcon {
     position: absolute;
     left: 0;
     right: 0;
@@ -188,20 +202,21 @@
     transform: translateY(-45%);
 }
 
-.descriptionTitle{
+.descriptionTitle {
     color: var(--white);
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
-.secondDescriptionTitle{
+.secondDescriptionTitle {
     font-size: 14px;
     font-weight: 500;
     color: #808080;
     margin-bottom: 2rem;
 }
-.descriptionCard{
+
+.descriptionCard {
     background: var(--warm-black-second);
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
@@ -212,16 +227,172 @@
     margin-bottom: 1rem;
     text-align: left;
 }
-.titleCard{
+
+.titleCard {
     color: var(--white);
     font-weight: 700;
     font-size: 18px;
 }
 
-.textCard{
+.textCard {
     font-weight: 500;
     font-size: 14px;
     color: #808080;
     line-height: 18px;
 }
+
 /*-------------Fin Despription-------------*/
+
+.section__conocenos {
+    width: 100%;
+    height: 50vh;
+    background-image: url("media/conocelo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.conocenos--title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white);
+    padding-top: 4rem;
+}
+
+/*------------------ Planes ------------------*/
+.planes {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+    margin: auto;
+}
+
+.planes__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--warm-black);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.planes__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--second-color-text);
+}
+
+.container__card--plan{
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 3rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1.5rem;
+    padding: 1.5rem .5rem;
+}
+
+.card--plan {
+    position: relative;
+    width: 12rem;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    padding: 2rem 1rem .5rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.recomendado {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    transform: translateY(-45%);
+    width: 101px;
+    height: 31px;
+    background: var(--first-color-bata-bit);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--white);
+    border-radius: .5rem;
+    display: grid;
+    place-items: center;
+}
+
+.card__tipo {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.card__valor {
+    font-weight: 700;
+    font-size: 52px;
+    color: #000000;
+    position: relative;
+}
+
+.card__valor:after{
+    content: "$";
+    font-size: 12px;
+    color: #363636;
+    position: absolute;
+    left: -.5rem;
+    top: .75rem;
+}
+
+.card__description {
+    font-weight: 500;
+    font-size: 12px;
+    color: #757575;
+}
+
+.card__button{
+    width: 151px;
+    height: 48px;
+    border-radius: .25rem;
+    background: var(--off-white);
+    border: 2px solid var(--first-color-bata-bit);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-size: 14px;
+    color: #201E1C;
+    margin: 1rem auto;
+}
+
+/*------------------ Fin Planes ------------------*/
+
+/*------------------ Footer ------------------*/
+.footer {
+    background: var(--first-color-bata-bit);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.footer div ul li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.copy {
+    display: grid;
+    place-items: center;
+    row-gap: .5rem;
+}
+
+.copy--span {
+    font-weight: 500;
+    font-size: 8px;
+    color: var(--white);
+}
+
+/*------------------ Fin Footer ------------------*/
