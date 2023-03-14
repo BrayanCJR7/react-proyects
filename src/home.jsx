@@ -10,13 +10,13 @@ const Home = () => {
             <section className="home">
                 <Nav/>
                 <TabPages/>
-                <ReusableTabPages tabNames={["contenido dinamico", "tab2", "tab-3"]}>
+                <ReusableTabPages tabNames={["contenido dinamico", "tab2", "Botones como check"]}>
+                    <div>Cambio de pestañas con un componente reutilizable</div>
+                    <div>
+                        Se pueden agregar los botones que se quieran, pero se deben agregar la misma cantidad de "div"
+                    </div>
                     <div>
                         <Tags/>
-                    </div>
-                    <div>Cambio de pestañas con un componente reutilizable</div>
-                    <div>Se pueden agregar los botones que se quieran, pero se deben agregar la misma cantidad de
-                        "div"
                     </div>
                 </ReusableTabPages>
             </section>

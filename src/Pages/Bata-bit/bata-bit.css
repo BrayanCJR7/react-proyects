@@ -11,8 +11,6 @@
     --second-color-text: #757575;
     --white: #fff;
     --background-color-bata-bit: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-    --second-color-bata-bit: #201E1C;
-    --three-color-bata-bit: #282623;
     --font-color-bata-bit: #fff;
     --font-weight-bata-bit: 700;
     --background-color-button-bata-bit: #FFE9D5;
@@ -24,6 +22,7 @@
     text-align: center;
     background-color: var(--off-white);
 }
+/*------------- Home -------------*/
 
 .home-bata {
     position: relative;
@@ -47,7 +46,6 @@
     color: var(--first-color-bata-bit);
     font-weight: 700;
     font-size: 24px;
-
 }
 
 .home-title {
@@ -87,7 +85,8 @@
     margin-left: .75rem;
     background-image: url("media/arrow_select.svg");
 }
-
+/*-------------Fin Home-------------*/
+/*------------- Bitcoin -------------*/
 .BitCoin {
     margin: 4rem 0;
 }
@@ -116,13 +115,13 @@
     margin: auto;
     font-weight: 500;
 }
-.containerInfoTasas{
+
+.containerInfoTasas {
     width: 60%;
-    background-color: red;
     margin: 3rem auto 0;
-    height: 10rem;
 }
-.titleTasas{
+
+.titleTasaMoneda {
     text-align: left;
     color: var(--first-color-text);
     font-weight: 700;
@@ -147,3 +146,82 @@
 .btnComisiones {
     background-color: var(--soft-blue);
 }
+
+.grid-tasas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    width: 13rem;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.item {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B5B0AC;
+}
+
+.grid-tasas .mValue{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    justify-content: center;
+}
+/*-------------Fin Bitcoin-------------*/
+/*------------- Despription -------------*/
+.mainDescription{
+    background: var(--warm-black);
+    padding: 4rem 1rem 2rem;
+    position: relative;
+}
+
+.patataIcon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    transform: translateY(-45%);
+}
+
+.descriptionTitle{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.secondDescriptionTitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
+    margin-bottom: 2rem;
+}
+.descriptionCard{
+    background: var(--warm-black-second);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: .25rem;
+    display: grid;
+    width: 18rem;
+    row-gap: .5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.titleCard{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.textCard{
+    font-weight: 500;
+    font-size: 14px;
+    color: #808080;
+    line-height: 18px;
+}
+/*-------------Fin Despription-------------*/
